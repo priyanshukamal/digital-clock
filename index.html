@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/clock.png" alt="Clock Icon">
+            <h1>CLOCK</h1>
+        </div>
+        
+        <div class="clock-display">
+            <h2>TIME: <span id="clock-time">00:00:00</span></h2>
+        </div>
+
+        <div class="set-time-container">
+            <div class="set-time">
+                <img src="/assets/Morning.png" alt="Sun">
+                <label>Set Wake Up Time:</label>
+                <input type="time" id="wake-up-time">
+            </div>
+            <div class="set-time">
+                <img src="/assets/Lunch.png" alt="Food">
+                <label>Set Lunch Time:</label>
+                <input type="time" id="lunch-time">
+            </div>
+            <div class="set-time">
+                <img src="/assets/Night.png" alt="Nap">
+                <label>Set Nap Time:</label>
+                <input type="time" id="nap-time">
+            </div>
+            <div class="set-time">
+                <img src="/assets/Night1.png" alt="Moon">
+                <label>Set Night Time:</label>
+                <input type="time" id="night-time">
+            </div>
+            <button id="set-alarm-btn">Set Alarm</button>
+        </div>
+
+        <div class="welcome-section">
+            <p>Welcome, how are you today?</p>
+        </div>
+
+        <div class="alarms-section">
+            <h3>Alarms:</h3>
+            <p id="alarm-list">No alarms set.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
